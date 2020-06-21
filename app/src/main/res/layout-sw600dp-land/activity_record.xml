@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--COMP 4521 TING Kai Chung 20435275 kcting
+    COMP 4521 CHEN Yu feng 20492352 ychenec
+    COMP 4521 KONG Wai Yong 2462462 wykongaa-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0"
+    tools:context=".Record">
+
+
+    <TextView
+        android:id="@+id/record_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:text="@string/recordtitle_text"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:fontFamily="@font/caveat_brush"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ac_record"
+        android:layout_width="331dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Achievement Record"
+        android:onClick="showPastAcRecord"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record_title"
+        app:srcCompat="@drawable/ff" />
+
+    <ImageView
+        android:id="@+id/plot_record"
+        android:layout_width="294dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Graph Record"
+        android:onClick="showPastGraphRecord"
+        app:layout_constraintEnd_toStartOf="@+id/calendar_record"
+        app:layout_constraintStart_toEndOf="@+id/ac_record"
+        app:layout_constraintTop_toBottomOf="@+id/record_title"
+        app:srcCompat="@drawable/kl" />
+
+    <ImageView
+        android:id="@+id/calendar_record"
+        android:layout_width="332dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:contentDescription="Calendar Record"
+        android:onClick="showPastCalendarRecord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record_title"
+        app:srcCompat="@drawable/vv" />
+
+    <TextView
+        android:id="@+id/image1_textlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/image1_text"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintBottom_toTopOf="@+id/layout_bottom_bar"
+        app:layout_constraintEnd_toEndOf="@+id/ac_record"
+        app:layout_constraintStart_toStartOf="@+id/ac_record"
+        app:layout_constraintTop_toBottomOf="@+id/ac_record" />
+
+
+    <TextView
+        android:id="@+id/image2_textlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/image2_text"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintBaseline_toBaselineOf="@+id/image1_textlabel"
+        app:layout_constraintEnd_toEndOf="@+id/plot_record"
+        app:layout_constraintStart_toStartOf="@+id/plot_record" />
+
+    <TextView
+        android:id="@+id/image3_textlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/image3_text"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintBaseline_toBaselineOf="@+id/image2_textlabel"
+        app:layout_constraintEnd_toEndOf="@+id/calendar_record"
+        app:layout_constraintStart_toStartOf="@+id/calendar_record" />
+
+    <LinearLayout
+        android:id="@+id/layout_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#121254"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layout_track"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_rewards_grey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rewards"
+                android:textColor="@color/colorIconGrey"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_calendar_grey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calendar"
+                android:textColor="@color/colorIconGrey"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_box_grey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/box"
+                android:textColor="@color/colorIconGrey"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_record"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_clock_grey"
+                android:color="#808080" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clock"
+                android:textColor="@color/colorIconGrey"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_person_grey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account"
+                android:textColor="@color/colorIconGrey"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

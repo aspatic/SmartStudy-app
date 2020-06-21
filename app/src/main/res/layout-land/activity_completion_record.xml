@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--COMP 4521 TING Kai Chung 20435275 kcting
+    COMP 4521 CHEN Yu feng 20492352 ychenec
+    COMP 4521 KONG Wai Yong 2462462 wykongaa-->
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".completionRecord"
+    android:background="#FFF3E0"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/happy_monkey"
+        android:text="Last Month"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day1"
+                style="@style/day"
+                android:text="1" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb1"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p1"
+                    style="@style/percent"
+                    android:text="70%" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day2"
+                style="@style/day"
+                android:text="2" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb2"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p2"
+                    style="@style/percent"
+                    android:text="100%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day3"
+                style="@style/day"
+                android:text=" 3" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb3"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p3"
+                    style="@style/percent"
+                    android:text="10%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day4"
+                style="@style/day"
+                android:text=" 4" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb4"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p4"
+                    style="@style/percent"
+                    android:text="80%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day5"
+                style="@style/day"
+                android:text=" 5" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb5"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p5"
+                    style="@style/percent"
+                    android:text="50%" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day6"
+                style="@style/day"
+                android:text=" 6" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb6"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p6"
+                    style="@style/percent"
+                    android:text="100%" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="24dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day7"
+                style="@style/day"
+                android:text="7" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb7"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p7"
+                    style="@style/percent"
+                    android:text="100%" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day8"
+                style="@style/day"
+                android:text="  8" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb8"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p8"
+                    style="@style/percent"
+                    android:text="100%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day9"
+                style="@style/day"
+                android:text="  9" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb9"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p9"
+                    style="@style/percent"
+                    android:text="20%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day10"
+                style="@style/day"
+                android:text=" 10" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb10"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p10"
+                    style="@style/percent"
+                    android:text="0%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day11"
+                style="@style/day"
+                android:text="11" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb11"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p11"
+                    style="@style/percent"
+                    android:text="50%" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day12"
+                style="@style/day"
+                android:text="12" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb12"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p12"
+                    style="@style/percent"
+                    android:text="30%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day13"
+                style="@style/day"
+                android:text="13" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb13"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p13"
+                    style="@style/percent"
+                    android:text="20%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day14"
+                style="@style/day"
+                android:text="14" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb14"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p14"
+                    style="@style/percent"
+                    android:text="0%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day15"
+                style="@style/day"
+                android:text="15" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb15"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p15"
+                    style="@style/percent"
+                    android:text="60%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/day16"
+                style="@style/day"
+                android:text="16" />
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb16"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p16"
+                    style="@style/percent"
+                    android:text="100%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day17"
+                style="@style/day"
+                android:text="17" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb17"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p17"
+                    style="@style/percent"
+                    android:text="100%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day18"
+                style="@style/day"
+                android:text="18" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb18"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p18"
+                    style="@style/percent"
+                    android:text="10%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day19"
+                style="@style/day"
+                android:text="19" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb19"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p19"
+                    style="@style/percent"
+                    android:text="20%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day20"
+                style="@style/day"
+                android:text="20" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb20"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p20"
+                    style="@style/percent"
+                    android:text="100%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day21"
+                style="@style/day"
+                android:text="20" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb21"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p21"
+                    style="@style/percent"
+                    android:text="100%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/day22"
+                style="@style/day"
+                android:text="22" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb22"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p22"
+                    style="@style/percent"
+                    android:text="100%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day23"
+                style="@style/day"
+                android:text="23" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb23"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p23"
+                    style="@style/percent"
+                    android:text="100%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day24"
+                style="@style/day"
+                android:text="24" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb24"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p24"
+                    style="@style/percent"
+                    android:text="100%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day25"
+                style="@style/day"
+                android:text="25" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb25"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p25"
+                    style="@style/percent"
+                    android:text="70%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day26"
+                style="@style/day"
+                android:text="26" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb26"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p26"
+                    style="@style/percent"
+                    android:text="10%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day27"
+                style="@style/day"
+                android:text="27" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb27"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p27"
+                    style="@style/percent"
+                    android:text="50%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day28"
+                style="@style/day"
+                android:text="28" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb28"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p28"
+                    style="@style/percent"
+                    android:text="80%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/day29"
+                style="@style/day"
+                android:text="29" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb29"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p29"
+                    style="@style/percent"
+                    android:text="100%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day30"
+                style="@style/day"
+                android:text="30" />
+
+            <RelativeLayout style="@style/frame">
+
+                <ProgressBar
+                    android:id="@+id/pb30"
+                    style="@style/pb" />
+
+                <TextView
+                    android:id="@+id/p30"
+                    style="@style/percent"
+                    android:text="100%" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/day31"
+            style="@style/day"
+            android:text="31" />
+
+        <RelativeLayout style="@style/frame">
+
+            <ProgressBar
+                android:id="@+id/pb31"
+                style="@style/pb" />
+
+            <TextView
+                android:id="@+id/p31"
+                style="@style/percent"
+                android:text="10%" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

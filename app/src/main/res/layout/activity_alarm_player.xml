@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--COMP 4521 TING Kai Chung 20435275 kcting
+    COMP 4521 CHEN Yu feng 20492352 ychenec
+    COMP 4521 KONG Wai Yong 2462462 wykongaa-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmPlayerActivity">
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/play_sound"
+        android:gravity="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

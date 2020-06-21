@@ -1,0 +1,109 @@
+<!--COMP 4521 TING Kai Chung 20435275 kcting
+    COMP 4521 CHEN Yu feng 20492352 ychenec
+    COMP 4521 KONG Wai Yong 2462462 wykongaa-->
+
+<resources>
+    <string name="app_name">SmartStudy</string>
+
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="intro">Smart Study</string>
+
+
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="re_password">Password Confirmation</string>
+    <string name="not_register">No account yet? Create one</string>
+    <string name="already_register">Already register? Login</string>
+
+    <string name="rewards">Rewards</string>
+    <string name="calendar">Calendar</string>
+    <string name="box">Box</string>
+    <string name="clock">Clock</string>
+    <string name="account">Account</string>
+
+    <string name="search_hint">Search for tasks</string>
+    <string name="search">Search</string>
+    <string name="logout">Logout</string>
+
+    <string name="ac_descrip">Click for more details! (Refreshed every beginning of month)</string>
+    <string name="ac_title">Achievements</string>
+    <string name="congrats_text">Congratulations ! You have achieved the \ngoal ! Keep going =)</string>
+
+    <string-array name="ac_titles">
+        <item>Achievement 1</item>
+        <item>Achievement 2</item>
+        <item>Achievement 3</item>
+        <item>Achievement 4</item>
+        <item>Achievement 5</item>
+        <item>Achievement 6</item>
+        <item>Achievement 7</item>
+        <item>Achievement 8</item>
+    </string-array>
+
+    <string-array name="ac_info">
+        <item>Created a timetable!</item>
+        <item>Complete all the tasks for 1 day!</item>
+        <item>Complete all the tasks for 3 consecutive days!</item>
+        <item>Complete all the tasks in 7 consecutive days!</item>
+        <item>Complete all the tasks in 14 consecutive days!</item>
+        <item>Complete >25% tasks!</item>
+        <item>Complete >50% tasks!</item>
+        <item>Complete all the tasks!</item>
+    </string-array>
+
+    <array name="ac_images">
+        <item>@drawable/gg</item>
+        <item>@drawable/ss</item>
+        <item>@drawable/sa</item>
+        <item>@drawable/a</item>
+        <item>@drawable/r</item>
+        <item>@drawable/g</item>
+        <item>@drawable/b</item>
+        <item>@drawable/n</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="locked_text"> You haven\'t unlocked this achievement =( </string>
+    <string name="recordtitle_text"><![CDATA[Click the images & look for your INCREDIBLE RECORDS!]]></string>
+    <string name="image1_text">Past \n Achievements Record</string>
+    <string name="image2_text">Past \n Completion Record</string>
+    <string name="image3_text">Past \n Completion Graph</string>
+
+    <string name="past">Past Records</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="add_task">Add Task</string>
+    <string name="save">Save</string>
+    <string name="enter_task">Enter Task</string>
+    <string name="enter_date">Enter Date</string>
+    <string name="select_date">SELECT DATE</string>
+    <string name="enter_time">Enter Time</string>
+    <string name="select_time">SELECT TIME</string>
+    <string name="enter_description">Enter description</string>
+    <string name="enter_duration">Enter Duration (mins)</string>
+    <string name="Task">Task</string>
+    <string name="description">Description</string>
+    <string name="time">Time</string>
+    <string name="duration">Duration</string>
+    <string name="status">Status</string>
+    <string name="doTask">Do It Now!</string>
+
+
+    <string name="add_your_new_activity">Add your new activity</string>
+    <string name="add_alarm">add_alarm</string>
+    <string name="play_sound">Times Up</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="reset">Reset</string>
+
+
+</resources>
+
+
+
+
